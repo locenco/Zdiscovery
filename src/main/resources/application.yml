@@ -1,0 +1,15 @@
+# Zookeeper connection parameters. Used for service discovery.
+zk:
+  # Enable/disable zookeeper discovery service.
+  enabled: "${ZOOKEEPER_ENABLED:true}"
+  # Zookeeper connect string
+  url: "${ZOOKEEPER_URL:localhost:2188}"
+  # Zookeeper retry interval in milliseconds
+  retry_interval_ms: "${ZOOKEEPER_RETRY_INTERVAL_MS:3000}"
+  # Zookeeper connection timeout in milliseconds
+  connection_timeout_ms: "${ZOOKEEPER_CONNECTION_TIMEOUT_MS:3000}"
+  # Zookeeper session timeout in milliseconds
+  session_timeout_ms: "${ZOOKEEPER_SESSION_TIMEOUT_MS:3000}"
+  # Name of the directory in zookeeper 'filesystem'
+  zk_dir: "${ZOOKEEPER_NODES_DIR:/thingsboard}"
+
