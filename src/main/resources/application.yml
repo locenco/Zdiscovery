@@ -3,7 +3,7 @@ zk:
   # Enable/disable zookeeper discovery service.
   enabled: "${ZOOKEEPER_ENABLED:true}"
   # Zookeeper connect string
-  url: "${ZOOKEEPER_URL:localhost:2188}"
+  url: "${ZOOKEEPER_URL:localhost:2181}"
   # Zookeeper retry interval in milliseconds
   retry_interval_ms: "${ZOOKEEPER_RETRY_INTERVAL_MS:3000}"
   # Zookeeper connection timeout in milliseconds
@@ -13,3 +13,7 @@ zk:
   # Name of the directory in zookeeper 'filesystem'
   zk_dir: "${ZOOKEEPER_NODES_DIR:/thingsboard}"
 
+service:
+  id: a1
+  ip: localhost
+  port: 7877
